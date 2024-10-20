@@ -36,5 +36,5 @@ void board(SDL_Renderer* renderer)
 
 
 	//affichage
-	SDL_RenderPresent(renderer);
+//	SDL_RenderPresent(renderer);
 }

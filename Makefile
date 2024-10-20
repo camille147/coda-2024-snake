@@ -4,7 +4,8 @@ NAME = snake
 
 SRCS = main.c \
         board.c \
-        apple.c
+        apple.c \
+	snake.c
 
 all :  $(NAME)
 

@@ -16,15 +16,18 @@ struct s_apple
 
 typedef struct s_apple posapp;
 
-typedef struct maillon
+typedef struct s_maillon
 {
 	int x_m;
 	int y_m;
-	struct maillon * next;
-};
+	struct s_maillon * next;
+}maillon;
 
 
 void board(SDL_Renderer* renderer);
 void applePosition(posapp  *apple);
-
+maillon *add_to_begin(maillon *list, int x, int y);
+void move(maillon *list, int dir, int dir_n);
+int S_Apple(maillon *list, posapp *apple);
+int collision(maillon *list);
 #endif
